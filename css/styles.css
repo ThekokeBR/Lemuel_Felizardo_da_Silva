@@ -110,9 +110,9 @@ p{
    
      /* Adiciona fundo cinza apenas aos itens da lista 'l' */
      li {
-        background-color:gray;
-        padding: 2px; /* Adiciona espaçamento interno */
-        margin-bottom: 2px; /* Adiciona margem inferior */
+        background-color:rgb(117, 117, 117);
+        padding: 3px; /* Adiciona espaçamento interno */
+        margin-bottom: 3px; /* Adiciona margem inferior */
     }
 }
 
