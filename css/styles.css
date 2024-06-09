@@ -101,10 +101,18 @@ p{
         display: block; /* Altera a exibição dos elementos para bloco */
         font-size: 36px; /* Define o tamanho da fonte dos itens do cabeçalho */
     }
-    article{
-        max-width: 100%; /* Define a largura máxima dos artigos como 100% */
-    }
     section{
         width: 90%; /* Define a largura da seção como 90% */
     }
+    article{
+        max-width: 100%; /* Define a largura máxima dos artigos como 100% */
+    }
+   
+     /* Adiciona fundo cinza apenas aos itens da lista 'l' */
+     li {
+        background-color:gray;
+        padding: 3px; /* Adiciona espaçamento interno */
+        margin-bottom: 3px; /* Adiciona margem inferior */
+    }
 }
+
