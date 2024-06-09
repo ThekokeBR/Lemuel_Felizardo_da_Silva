@@ -12,26 +12,26 @@
 
 /* Estilos para o cabeçalho */
 header{
-    padding: 10px; /* Adiciona um preenchimento interno ao cabeçalho */
+    padding: 12px; /* Adiciona um preenchimento interno ao cabeçalho */
     background-color: rgb(29, 29, 29); /* Define a cor de fundo do cabeçalho */
     display: flex; /* Define o cabeçalho como um contêiner flexível */
     align-items: center; /* Centraliza verticalmente os itens dentro do cabeçalho */
     justify-content: space-between; /* Distribui o espaço entre os itens no cabeçalho */
-    border-bottom: 2px solid var(--colorPrimary); /* Adiciona uma borda inferior com a cor primária */
+    border-bottom: 3px solid var(--colorPrimary); /* Adiciona uma borda inferior com a cor primária */
+}
+
+/* Estilos para o logotipo no cabeçalho */
+header .logo{
+    font-size: 28px; /* Define o tamanho da fonte do logotipo */
+    color: var(--colorPrimary); /* Define a cor do logotipo */
+    font-weight: bold; /* Define o peso da fonte como negrito */
 }
 
 /* Estilos para lista, itens de lista e links no cabeçalho */
 header ul, li, a{
     display: flex; /* Define a lista, itens de lista e links como contêineres flexíveis */
-    gap: 16px; /* Define o espaço entre os elementos */
+    gap: 18px; /* Define o espaço entre os elementos */
     text-decoration: none; /* Remove a decoração de texto dos links */
-}
-
-/* Estilos para o logotipo no cabeçalho */
-header .logo{
-    font-size: 26px; /* Define o tamanho da fonte do logotipo */
-    color: var(--colorPrimary); /* Define a cor do logotipo */
-    font-weight: bold; /* Define o peso da fonte como negrito */
 }
 
 /* Estilos para links no cabeçalho */
@@ -51,7 +51,7 @@ h3{
     padding: 20px; /* Adiciona preenchimento interno ao elemento h3 */
     text-align: center; /* Centraliza o texto */
     color: var(--colorPrimary); /* Define a cor do texto */
-    font-size: 26px; /* Define o tamanho da fonte */
+    font-size: 28px; /* Define o tamanho da fonte */
 }
 
 /* Estilos para seções */
@@ -72,13 +72,6 @@ article {
     max-width: 600px; /* Define a largura máxima do artigo */
 }
 
-/* Estilos para imagens */
-img {
-    width: 100%; /* Faz com que as imagens ocupem 100% da largura do contêiner pai */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 600px; /* Define a largura máxima da imagem */
-}
-
 /* Estilos para parágrafos */
 p{
     color: rgb(0, 0, 0); /* Define a cor do texto dos parágrafos */
@@ -86,20 +79,32 @@ p{
     text-align: center; /* Centraliza o texto */
 }
 
+/* Estilos para imagens */
+img {
+    width: 100%; /* Faz com que as imagens ocupem 100% da largura do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 600px; /* Define a largura máxima da imagem */
+}
+
 /* Media query para telas menores que 600px */
 @media (max-width: 600px) {
     header .logo{
-        font-size: 42px; /* Aumenta o tamanho da fonte do logotipo */
+        font-size: 40px; /* Aumenta o tamanho da fonte do logotipo */
     }
     header a{
-        font-size: 42px; /* Aumenta o tamanho da fonte dos links */
+        font-size: 40px; /* Aumenta o tamanho da fonte dos links */
     }
     header nav a{
-        font-size: 16px; /* Define o tamanho da fonte dos links de navegação */
+        font-size: 18px; /* Define o tamanho da fonte dos links de navegação */
+    }
+    li { 
+        background-color:rgb(117, 117, 117); /* Adiciona fundo cinza apenas aos itens da lista 'l' */
+        padding: 3px; /* Adiciona espaçamento interno */
+        margin-bottom: 3px; /* Adiciona margem inferior */
     }
     header ul, li, a{
         display: block; /* Altera a exibição dos elementos para bloco */
-        font-size: 36px; /* Define o tamanho da fonte dos itens do cabeçalho */
+        font-size: 38px; /* Define o tamanho da fonte dos itens do cabeçalho */
     }
     section{
         width: 90%; /* Define a largura da seção como 90% */
@@ -107,12 +112,5 @@ p{
     article{
         max-width: 100%; /* Define a largura máxima dos artigos como 100% */
     }
-   
-     /* Adiciona fundo cinza apenas aos itens da lista 'l' */
-     li {
-        background-color:rgb(117, 117, 117);
-        padding: 3px; /* Adiciona espaçamento interno */
-        margin-bottom: 3px; /* Adiciona margem inferior */
     }
-}
 
