@@ -7,7 +7,7 @@
 
 /* Define a cor primária como variável global */
 :root{
-    --colorPrimary: rgb(87, 101, 110); /* Define a variável de cor primária */
+    --colorPrimary: rgb(0, 0, 0); /* Define a variável de cor primária */
 }
 
 /* Estilos para o cabeçalho */
@@ -74,7 +74,7 @@ article {
 
 /* Estilos para parágrafos */
 p{
-    color: rgb(0, 0, 0); /* Define a cor do texto dos parágrafos */
+    color: rgb(122, 121, 121); /* Define a cor do texto dos parágrafos */
     font-weight: bold; /* Define o peso da fonte como negrito */
     text-align: center; /* Centraliza o texto */
 }
